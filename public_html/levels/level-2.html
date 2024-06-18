@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Maths Game - Yash - Level 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css" type="text/css"/>
+
+       </head>
+    <!-- 1: time process in JavaScript -->
+    <!-- step: on load = start time -->
+    <body onload=startTime(); style="background-color: beige;">
+        <!-- step: activate audio -->
+        <audio id="my-audio">
+            <source src="../sounds/applause8.mp3">
+         </audio>
+        <audio id="my-audio2">
+            <source src="../sounds/boo3.mp3">
+        </audio>
+        
+        <!-- step: in this area will have a limited width to fit my digital screen 
+        in vertical -->
+        <div id="menu">
+        <!-- important information to the user -->   
+        <h1 id="title" style="border-color: blue; color: #5e6159;">Level 2: Hard Difficulty</h1>
+        <h1 id="instruction-level">Find the answer to this question</h1>
+        <h1 id="time" style="border-color: blue;">00:00</h1>
+        <h1 id="score" style="border-color: blue;">Score: 0</h1>
+        
+        <!-- step: this division has each number and operator 
+        separated as an equation -->
+        <div id="equation" style="border-color: blue;"> <!-- concept formula 1+1= -->
+            <h1 id="num1" style="padding: 0 7px">1</h1>
+            <h1 id="operator" style="padding: 0 7px">+</h1>
+            <h1 id="num2" style="padding: 0 7px">1=</h1>
+        </div>
+        
+        <hr>
+        <!-- step: i want to create 4 buttons 
+             The buttons randomly plays a key role as the 
+             dummy answer or the correct answer -->
+        <div>
+            <button onclick="compare_answer(1)" id="option1" style="border-color: blue;"></button> <!-- parameter passing -->
+            <button onclick="compare_answer(2)" id="option2" style="border-color: blue;"></button>
+            <button onclick="compare_answer(3)" id="option3" style="border-color: blue;"></button>
+            <button onclick="compare_answer(4)" id="option4" style="border-color: blue;"></button>
+        </div>
+        
+        <hr>
+        <!-- step: starts a function to go to the next question -->
+            <button hidden="" onclick="startTime()" id="next-question" style="border-color: blue;">Next Question</button>
+        <!-- not a button the user can click -->
+        <h1 hidden="" id="finish" style="border-color: blue">Finish</h1>
+    </div>
+        
+    <!-- activate the JavaScript -->
+    <script src="script/level-2.js"></script>
+    </body>
+</html>

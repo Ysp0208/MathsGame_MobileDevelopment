@@ -1,0 +1,207 @@
+/* stack overflow has recommened to us to start with 0 
+padding for mobiles */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* background in brown shade  and change text font for all text on 
+the page for mobiles */
+body{
+    background: #7f6030;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+#menu, note{ /* Ensure all blocks and text are in the middle */
+   font-size: 20px;
+   color: rgb(255, 140, 0);
+   margin: 15px;
+}
+
+#container{ /* Ensure all blocks and text are in the middle */
+    text-align: center;
+    margin: 15px auto; /* provides distance from the top */
+    width: 350px; /* provide the width on the content */
+}
+
+#hr{ /* shifts words or blocks into a lower level (its invisible) */
+    border-width: 0px;
+    margin: 5px;
+}
+
+#title{ /* */
+    font-size: 35px;
+    border: 7px;
+    font-family: bold;
+    border-style: solid;
+    border-color: rgb(255, 140, 0);
+    color: rgb( 255, 255, 255);
+    margin: 15px 5px;
+    padding: 0px 5px;
+}
+
+#instructions{
+    font-size: 50px;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(255, 140, 0);
+    color: rgb( 255, 255, 255);
+    margin: 15px 5px;
+    padding: 0px 5px;
+    font-family: bold;
+}
+
+#level-button{
+    font-size: 55px;
+    border: 6px;
+    border-style: solid;
+    border-color: rgb(255, 140, 0);
+    color: black;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: blue;
+    display: inline-flex;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    background-color: beige;
+}
+
+#level-button:active{ /* button chnages colour when its clicked */
+    border-color: rgb(255, 140, 0);
+    color: #5e6159;
+}
+
+/* css for level 0, 1 and 2 */
+
+#instruction-level{
+    font-size: 22px;
+    color: #5e6159;
+    margin-top: -5px;
+}
+
+#time{
+    font-size: 20px;
+    border: 3.5px;
+    border-style: double;
+    color: #5e6159;
+    padding: 10px;
+    float: right;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-right: 10px;
+    
+}
+
+#score{
+    font-size: 20px;
+    border: 3.5px;
+    border-style: double;
+    color: #5e6159;
+    padding: 10px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left: 10px;
+}
+
+#equation{
+    font-size: 40px;
+    border: 7px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    
+    border-style: solid;
+    border-color: plum;
+    border-radius: 3cm;
+    color: #5e6159;
+    
+    width: 300px;
+    margin: auto;
+}
+
+#option1, #option2, #option3, #option4{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+    border: 5px;
+    background-color: transparent;
+    color: #5e6159;
+    border-style: solid;
+    border-color: plum;
+    
+    font-size: 45px;
+    width: 150px;
+    height: 74px;
+    margin: 5px;
+    padding: 11px;
+    overflow: hidden;
+    
+}
+/* when the user click on the option, the color of 
+  the button will change to a darker colour */
+#option1:active{
+    border-color: palevioletred;
+    color: palevioletred;
+}
+#option2:active{
+    border-color: palevioletred;
+    color: palevioletred;
+}
+#option3:active{
+    border-color: palevioletred;
+    color: palevioletred;
+}
+#option4:active{
+    border-color: palevioletred;
+    color: palevioletred;
+}
+/* option buttons when they are disables, slightly darker */
+#option1:disabled{
+    border-color: purple;
+    color: purple;
+}
+#option2:disabled{
+    border-color: purple;
+    color: purple;
+}
+#option3:disabled{
+    border-color: purple;
+    color: purple;
+}
+#option4:disabled{
+    border-color: purple;
+    color: purple;
+
+}   
+    /* finished button*/
+#finish{
+    font-size: 45px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+    border: 5px;
+    background-color: transparent;
+    color: #5e6159;
+    border-style: solid;
+    border-color: plum;
+    
+    margin: 5px auto;
+    padding: 5px 0;
+    text-align: center;
+    width: 325px;
+    
+}
+#next-question{
+    font-size: 45px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+    border: 5px;
+    background-color: transparent;
+    color: #5e6159;
+    border-style: solid;
+    border-color: plum;
+    
+    margin: 5px auto;
+    padding: 5px 0;
+    text-align: center;
+    width: 340px;
+}
+
